@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gavel Role Players</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <form id="roleForm">
+            <h1>Next Gavel Club Selections</h1>
+            <input type="number" name="session" placeholder="Enter Session Number" required>
+            <input type="text" name="theme" placeholder="Enter Theme" required>
+            <input type="text" name="generalEvaluator" placeholder="Enter General Evaluator Name" required>
+            <input type="text" name="grammarian" placeholder="Enter Grammarian Name" required>
+            <input type="text" name="timer" placeholder="Enter Timer Name" required>
+            <input type="text" name="ahCounter" placeholder="Enter Ah-Counter Name" required>
+            <input type="text" name="speaker1" placeholder="Enter First Prepare Speaker Name" required>
+            <input type="text" name="speaker2" placeholder="Enter Second Prepare Speaker Name" required>
+            <input type="text" name="roundRobinMaster" placeholder="Enter Round Robin Master Name" required>
+            <input type="text" name="tableTopicMaster" placeholder="Enter Table Topic Master Name" required>
+            <button type="submit">Update</button>
+        </form>
+        <div class="tables">
+            <table>
+                <tr>
+                    <th>Session</th>
+                    <td id="sessionCell"></td>
+                    <td class="table-actions">
+                        <button onclick="edit('session')">Edit</button>
+                        <button onclick="save('session')">Save</button>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Theme</th>
+                    <td id="themeCell"></td>
+                    <td class="table-actions">
+                        <button onclick="edit('theme')">Edit</button>
+                        <button onclick="save('theme')">Save</button>
+                    </td>
+                </tr>
+            </table>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Roles</th>
+                        <th>Players</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="rolesTableBody">
+                    <tr>
+                        <td>General Evaluator</td>
+                        <td id="generalEvaluatorCell"></td>
+                        <td class="table-actions">
+                            <button onclick="edit('generalEvaluator')">Edit</button>
+                            <button onclick="save('generalEvaluator')">Save</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Grammarian</td>
+                        <td id="grammarianCell"></td>
+                        <td class="table-actions">
+                            <button onclick="edit('grammarian')">Edit</button>
+                            <button onclick="save('grammarian')">Save</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Timer</td>
+                        <td id="timerCell"></td>
+                        <td class="table-actions">
+                            <button onclick="edit('timer')">Edit</button>
+                            <button onclick="save('timer')">Save</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Ah-Counter</td>
+                        <td id="ahCounterCell"></td>
+                        <td class="table-actions">
+                            <button onclick="edit('ahCounter')">Edit</button>
+                            <button onclick="save('ahCounter')">Save</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>First Prepare Speaker</td>
+                        <td id="speaker1Cell"></td>
+                        <td class="table-actions">
+                            <button onclick="edit('speaker1')">Edit</button>
+                            <button onclick="save('speaker1')">Save</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Second Prepare Speaker</td>
+                        <td id="speaker2Cell"></td>
+                        <td class="table-actions">
+                            <button onclick="edit('speaker2')">Edit</button>
+                            <button onclick="save('speaker2')">Save</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Round Robin Master</td>
+                        <td id="roundRobinMasterCell"></td>
+                        <td class="table-actions">
+                            <button onclick="edit('roundRobinMaster')">Edit</button>
+                            <button onclick="save('roundRobinMaster')">Save</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Table Topic Master</td>
+                        <td id="tableTopicMasterCell"></td>
+                        <td class="table-actions">
+                            <button onclick="edit('tableTopicMaster')">Edit</button>
+                            <button onclick="save('tableTopicMaster')">Save</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
