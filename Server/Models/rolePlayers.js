@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 
 const playersSchema = new mongoose.Schema({
-    session: {type: Number, required: true},
+    session: {type: String, required: true},
     theme: {type: String, required: true},
     general_evoluator: {type: String, required: true},
     gramarian: {type: String, required: true},
